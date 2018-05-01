@@ -133,7 +133,7 @@ function drawLabels() {
 
 		translate(0, i * zoomFactor, 0);
 
-		if (i % 10) {
+		if (i % 15) {
 			line(0, 0, 0, -15, 0, 0);
 		} else {
 			line(0, 0, 0, -30, 0, 0);
