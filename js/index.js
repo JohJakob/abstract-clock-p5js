@@ -21,10 +21,9 @@ function setup() {
 }
 
 function draw() {
-	background(0, 0, 100);
+	background(50, 50, 90);
 
 	setupLightAndCamera();
-	drawGroundPlane();
 	drawCoordinateSystem();
 	drawBox();
 	drawLabels();
@@ -43,22 +42,6 @@ function setupLightAndCamera() {
 
 	ortho(-width / 2, width / 2, -height / 2, height / 2, 0, 10000);
 }
-
-function drawGroundPlane() {
-	// Draw ground plane
-
-	noStroke();
-	fill(50, 50, 90);
-
-	push();
-
-	translate(0, 0, -100);
-
-	plane(1000000, 1000000);
-
-	pop();
-}
-
 
 function drawCoordinateSystem() {
 	// Draw axes
